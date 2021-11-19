@@ -3,7 +3,7 @@
    * Lua script for Cockos REAPER
    * @about This script aims to reproduce the folder separation in a way Logic X does it
    * @author: Mathieu CONAN
-   * @author URI: https://forum.cockos.com/member.php?u=153781
+   * author URI: https://forum.cockos.com/member.php?u=153781
    * Licence: GPL v3
    * REAPER: 6.0
    * @version 0.1
