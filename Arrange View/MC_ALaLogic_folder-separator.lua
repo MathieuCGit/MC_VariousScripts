@@ -1,13 +1,13 @@
 --[[
-   * @description ReaScript Name: Draw separator on folder track - aka A la Logic X
+   * @description Draw separator on folder track - aka A la Logic X
    * Lua script for Cockos REAPER
-   * @about This script aims to reproduce the folder separation in a way Logic X does it
-   *  --author URI: https://forum.cockos.com/member.php?u=153781
    * @author: Mathieu CONAN
    * Licence: GPL v3
    * REAPER: 6.0
    * @version 0.1
-   * Extensions: None   
+   * Extensions: None 
+   * @about This script aims to reproduce the folder separation in a way Logic X does it
+   *  User URI: https://forum.cockos.com/member.php?u=153781   
 --]]
 
 --[[
