@@ -23,6 +23,10 @@
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 MC Reapack repository\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 This repository contains some scripts for Cockos Reaper D.A.W.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 To use these scripts you can install them by using this URL in Reapack : {\field{\*\fldinst{HYPERLINK "https://raw.githubusercontent.com/MathieuCGit/MC_VariousScripts/master/index.xml"}}{\fldrslt{\ul
+https://raw.githubusercontent.com/MathieuCGit/MC_VariousScripts/master/index.xml
+}}}
+\par}
 }
 ]]></description>
   </metadata>
