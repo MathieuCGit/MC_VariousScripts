@@ -11,7 +11,7 @@
 }
 ]]></description>
       </metadata>
-      <version name="0.1" author="URI: https://forum.cockos.com/member.php?u=153781" time="2021-11-19T23:41:53Z">
+      <version name="0.1" author="Mathieu CONAN" time="2021-11-19T23:41:53Z">
         <source main="main">https://github.com/MathieuCGit/MC_VariousScripts/raw/583c9cc241dcd5b993ad2baa9c0e010e52fb3eb8/Arrange%20View/MC_ALaLogic_folder-separator.lua</source>
       </version>
     </reapack>
