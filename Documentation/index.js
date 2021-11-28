@@ -1,0 +1,11 @@
+var docs = [
+{path:"module/MC_ALaLogic_folder-separator.lua.html", type:"module", title:"lua", text:"Draw separator on folder track - aka A la Logic X"},
+{path:"module/MC_ALaLogic_folder-separator.lua.html#MC_ALaLogic_folder-separator.lua.Debug", type:"function", title:"MC_ALaLogic_folder-separator.lua.Debug", text:"Debug function - display messages in reaper console"},
+{path:"module/MC_ALaLogic_folder-separator.lua.html#MC_ALaLogic_folder-separator.lua.createLogicXItem", type:"function", title:"MC_ALaLogic_folder-separator.lua.createLogicXItem", text:"create item on track passd in argument"},
+{path:"module/MC_ALaLogic_folder-separator.lua.html#MC_ALaLogic_folder-separator.lua.cleanArrangeView", type:"function", title:"MC_ALaLogic_folder-separator.lua.cleanArrangeView", text:"remove all items from arrange view. This function is called with reaper.atexit()"},
+{path:"module/MC_ALaLogic_folder-separator.lua.html#MC_ALaLogic_folder-separator.lua.deleteEmptyItemsOnTracks", type:"function", title:"MC_ALaLogic_folder-separator.lua.deleteEmptyItemsOnTracks", text:"Delete empty item on the track passed"},
+{path:"module/MC_ALaLogic_folder-separator.lua.html#MC_ALaLogic_folder-separator.lua.doesItemContainsMidiData", type:"function", title:"MC_ALaLogic_folder-separator.lua.doesItemContainsMidiData", text:"check if an item located on folder track contains MIDI data"},
+{path:"module/MC_ALaLogic_folder-separator.lua.html#MC_ALaLogic_folder-separator.lua.getLastElementTimeEnd", type:"function", title:"MC_ALaLogic_folder-separator.lua.getLastElementTimeEnd", text:"We get the end of the lastest element in the project. Element means items, markers and regions"},
+{path:"module/MC_ALaLogic_folder-separator.lua.html#debug", type:"section", title:"Debug tools", text:""},
+{path:"manual/readme.html#mc_reapack_repository", type:"section", title:"MC Reapack repository", text:"This repository contains some scripts for Cockos Reaper D.A.W. To use these scripts you can install them by using this URL in Reapack : https://raw.githubusercontent.com/MathieuCGit/MC_VariousScripts/master/index.xml"},
+];

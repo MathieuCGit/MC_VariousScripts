@@ -1,14 +1,15 @@
---[[--
-	-- Description: Draw separator on folder track - aka A la Logic X
-	-- Author: Mathieu CONAN   
-	-- Version: 0.1.3
-	-- About: This script aims to reproduce the folder separation in a way Logic X does it.
-	-- Links: 
-		- Github repository https://github.com/MathieuCGit/MC_VariousScripts
-		- User profile https://forum.cockos.com/member.php?u=153781
-	-- Changelog: ReaPack description improvment
-	-- Licence: GPL V3.0
---]]
+--[[-- 
+]]--
+-- Description: Draw separator on folder track - aka A la Logic X
+-- Author: Mathieu CONAN   
+-- Version: 0.1.4
+-- About: This script aims to reproduce the folder separation in a way Logic X does it.
+-- Links: 
+--		Github repository https://github.com/MathieuCGit/MC_VariousScripts
+--		User profile https://forum.cockos.com/member.php?u=153781
+-- Changelog: ReaPack description improvment
+-- Licence: GPL V3.0
+
 
 --
 --[[ USER CUSTOMIZATION ]]--
@@ -36,6 +37,13 @@ ITEM_LOCK=1 -- 1 means items is locked and can't be moved/cut/split/nothing. But
 --[[ Various Functions]]
 --
 
+	--- Draw separator on folder track - aka A la Logic X
+	--@module MC_ALaLogic_folder-separator.lua
+
+	---Debug tools
+	--
+	--@section debug
+	
 	---Debug function - display messages in reaper console
 	--@tparam string String aims to be displayed in the reaper console
 	function Debug(String)
