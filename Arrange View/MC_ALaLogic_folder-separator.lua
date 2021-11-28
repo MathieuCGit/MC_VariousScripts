@@ -2,39 +2,44 @@
 ]]--
 -- Description: Draw separator on folder track - aka A la Logic X
 -- Author: Mathieu CONAN   
--- Version: 0.1.4
--- Changelog: Add developers documentation
+-- Version: 0.0.1
+-- Changelog: Initial release
 -- Link: Github repository https://github.com/MathieuCGit/MC_VariousScripts
--- About: This script aims to reproduce the folder separation in a way Logic X does it.
---   # Draw separator on folder track
---   
---   This script aimes to provide a mechanism similar to the one in LogicProX to separate 
---   folders in the Arrange View.
---
---   # Options
---
---   ## TRACK_HEIGHT
---
---    this MUST be AT LEAST 2 pixels higher than the size defined in Preferences > Apparence > Media > "Hide labels for items when item take lane height is less than". 
---   You also have to uncheck "draw labels above items, rather than within items"
---    Default value is 28 but I got better result with 20pixels.
---    Default 6 and dafault 5 theme TRACK_HEIGHT=25. Also work with Jane, Funktion, 
---    Other tested themes and values :
---    iLogic V2 = 28
---    iLogic V3 = 24
---    Flat Madness and CubeXD= 22
---
---   ## TRACK_COLOR_SINGLE
---    do you want all the item folder to get the same color ? Otherwise, default folder track color will be used. Default is 0
---
---   ##TRACK_COLOR
---    use RGB color code. Default is {111,121,131}
---
---   ## TRACK_COLOR_DARKER_STEP
---    this is the amount of darkness yo uwant to apply to default track color. 0 means NO darkness. Default is 25
---
---  
---   User profile https://forum.cockos.com/member.php?u=153781
+--[[ About: This script aims to reproduce the folder separation in a way Logic X does it.
+   ## Draw separator on folder track
+
+   This script aimes to provide a mechanism similar to the one in LogicProX to separate 
+   folders in the Arrange View.
+
+---
+   ## Options
+
+   Actually you have to customize your preferences directly into the script.
+
+
+  **``TRACK_HEIGHT``**
+    This **MUST** be **AT LEAST** 2 pixels higher than the size defined in Preferences > Apparence > Media > "Hide labels for items when item take lane height is less than". 
+    You also have to uncheck "draw labels above items, rather than within items"
+    _Default value is **``28``**_ but I got better result with 20pixels.
+   - Default 6 and dafault 5 theme TRACK_HEIGHT=25. 
+   - 25 Also works with Jane, Funktion.
+   - iLogic V2 = 28
+   - iLogic V3 = 24
+   - Flat Madness and CubeXD= 22
+
+   **``TRACK_COLOR_SINGLE``**
+    Do you want all the item folder to get the same color ? Otherwise, default folder track color will be used. _Default is **``0``**_
+
+   **``TRACK_COLOR``**
+    Use RGB color code. _Default is **``{111,121,131}``**_
+
+   **``TRACK_COLOR_DARKER_STEP``**
+    This is the amount of darkness yo uwant to apply to default track color. 0 means NO darkness. _Default is **``25``**_
+  
+   User profile [https://forum.cockos.com/member.php?u=153781]([https://forum.cockos.com/member.php?u=153781])
+
+---
+ ]]--
 -- Licence: GPL V3.0
 
 
