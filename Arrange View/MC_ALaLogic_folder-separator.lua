@@ -2,10 +2,8 @@
    * @description Draw separator on folder track - aka A la Logic X
    * @author: Mathieu CONAN   
    * @version 0.1
-   * @about 
-		This script aims to reproduce the folder separation in a way Logic X does it.
-   * @links
-		Github repository https://github.com/MathieuCGit/MC_VariousScripts
+   * @about This script aims to reproduce the folder separation in a way Logic X does it.
+   * @links	Github repository https://github.com/MathieuCGit/MC_VariousScripts
 		User profile https://forum.cockos.com/member.php?u=153781
 		Forum Thread
    * Licence: GPL v3
