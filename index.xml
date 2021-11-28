@@ -12,10 +12,6 @@
 ]]></description>
         <link rel="website" href="https://github.com/MathieuCGit/MC_VariousScripts">Github repository</link>
       </metadata>
-      <version name="0.0.1" author="Mathieu CONAN" time="2021-11-28T23:08:05Z">
-        <changelog><![CDATA[Initial release]]></changelog>
-        <source main="main">https://github.com/MathieuCGit/MC_VariousScripts/raw/3d6bd4379524c01a787971ac5325ec7f2f71c112/Arrange%20View/MC_ALaLogic_folder-separator.lua</source>
-      </version>
     </reapack>
   </category>
   <metadata>
