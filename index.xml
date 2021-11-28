@@ -1,31 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index version="1" name="MC_VariousScripts" commit="3d6bd4379524c01a787971ac5325ec7f2f71c112">
-  <category name="Arrange View">
-    <reapack name="MC_ALaLogic_folder-separator.lua" type="script" desc="Draw separator on folder track - aka A la Logic X">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 This script aims to reproduce the folder separation in a way Logic X does it.\par}
-}
-]]></description>
-        <link rel="website" href="https://github.com/MathieuCGit/MC_VariousScripts">Github repository</link>
-      </metadata>
-    </reapack>
-  </category>
-  <metadata>
-    <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 MC Reapack repository\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 This repository contains some scripts for Cockos Reaper D.A.W.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 To use these scripts you can install them by using this URL in Reapack : {\field{\*\fldinst{HYPERLINK "https://raw.githubusercontent.com/MathieuCGit/MC_VariousScripts/master/index.xml"}}{\fldrslt{\ul
-https://raw.githubusercontent.com/MathieuCGit/MC_VariousScripts/master/index.xml
-}}}
-\par}
-}
-]]></description>
-  </metadata>
 </index>
