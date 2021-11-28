@@ -2,17 +2,19 @@
    * @description Draw separator on folder track - aka A la Logic X
    * @author: Mathieu CONAN   
    * @version 0.1
-   * @about This script aims to reproduce the folder separation in a way Logic X does it
-   * 	User URI: https://forum.cockos.com/member.php?u=153781   
-   *
+   * @about 
+		This script aims to reproduce the folder separation in a way Logic X does it.
+   * @links
+		Github repository https://github.com/MathieuCGit/MC_VariousScripts
+		User profile https://forum.cockos.com/member.php?u=153781
+		Forum Thread
    * Licence: GPL v3
-   * REAPER: 6.0
+   * REAPER: 6.11 or later
    * Extensions: None 
 --]]
 
 --[[
  * @Changelog:
- * v1.0 (2021-11-20)
    + Initial Release
 --]]
 
@@ -35,7 +37,7 @@ TRACK_COLOR={111,121,131} -- use RGB color code. Default is {111,121,131}
 
 TRACK_COLOR_DARKER_STEP = 25 --this is the amount of darkness yo uwant to apply to default track color. 0 means NO darkness. Default is 25
 
-ITEM_LOCK=1 -- 1 means items is locked and can't be moved/cut/split/nothing. But actually Reaper allows to many thing to happen to locked item so this option is for future versions. Default is 1
+ITEM_LOCK=1 -- 1 means items is locked and can't be moved/cut/split/nothing. But actually Reaper allows unwanted behaviour to locked item (split!!) so this option is for future versions. Default is 1
 
 
 --
@@ -51,20 +53,13 @@ ITEM_LOCK=1 -- 1 means items is locked and can't be moved/cut/split/nothing. But
 	---create item on track passd in argument
 	-- @tparam track track a reaper track ressource
 	function createLogicXItem (track)
-		local lastItemTimeEnd=0
-		lastItemTimeEnd=getLastItemTimeEnd()
+		lastElementTimeEnd=getLastElementTimeEnd()
 		_,trackName = reaper.GetSetMediaTrackInfo_String( track, "P_NAME",0,0)-- get track name and 
-		startTime, endTime = reaper.BR_GetArrangeView(0) --project start and end
 
-		if endTime > lastItemTimeEnd+100 then
-			-- if zoom out is too important, some actions like "View: Zoom out project"
-			-- fails to adjust size and you have to zoom manually with mouse to get it right
-			-- so for now we put a limit based on the lastest item time end + 100...welll...100 is arbitrary...
-			endTime=lastItemTimeEnd+50
-			endTime=math.floor(endTime+0.5)--we need an integer so we round the float
-			startTime=math.floor(startTime+0.5)
-			_, _ = reaper.GetSet_ArrangeView2( 0, 1, startTime, endTime )
-		end
+		endTime=lastElementTimeEnd+50
+		endTime=math.floor(endTime+0.5)--we need an integer so we round the float
+		startTime=0
+		_, _ = reaper.GetSet_ArrangeView2( 0, 1, startTime, endTime )
 
 		-- and create an item which is project lenght
 		reaper.AddMediaItemToTrack(track)
@@ -164,37 +159,74 @@ ITEM_LOCK=1 -- 1 means items is locked and can't be moved/cut/split/nothing. But
 		end
 	end
   
-	---We get the end of the lastest item in the project
-    --@treturn int lastItemTimeEnd is the time in second of the end of the last item on the timeline
-	function getLastItemTimeEnd()
+	---We get the end of the lastest element in the project. Element means items, markers and regions
+    --@treturn int lastElementTimeEnd is the time in second of the end of the last element on the timeline
+	function getLastElementTimeEnd()
+		local lastElementTimeEnd=0
 		local lastItemTimeEnd=0
 		nbrOfTrack =  reaper.CountTracks(0)--nbre of track in the project
 
-		for i=0, nbrOfTrack-1 do
-		--for each track
-			track =  reaper.GetTrack( 0, i ) --we get info from the current track
-			trackFolderDepth = reaper.GetMediaTrackInfo_Value( track, "I_FOLDERDEPTH") --we check if it's a folder or not
+		
+		--  
+		--	[[ First we look for the end of the last item ]]
+		-- 
+			for i=0, nbrOfTrack-1 do
+			--for each track
+				track =  reaper.GetTrack( 0, i ) --we get info from the current track
+				trackFolderDepth = reaper.GetMediaTrackInfo_Value( track, "I_FOLDERDEPTH") --we check if it's a folder or not
 
-			if trackFolderDepth <= 0.0 then 
-			--if track is NOT a folder (normal=0) or the last track of a folder (negative values)
-			nbrOfItems= reaper.GetTrackNumMediaItems(track)--get nbre of items on this track
+				if trackFolderDepth <= 0.0 then 
+				--if track is NOT a folder (normal=0) or the last track of a folder (negative values)
+				nbrOfItems= reaper.GetTrackNumMediaItems(track)--get nbre of items on this track
 
-				for j=0, nbrOfItems-1 do
-				--for each item 
-				item =  reaper.GetTrackMediaItem( track, j )--we get current item info
-				itemStart = reaper.GetMediaItemInfo_Value( item, "D_POSITION" )
-				itemLen = reaper.GetMediaItemInfo_Value( item, "D_LENGTH" )
-				itemEnd = itemStart+itemLen
+					for j=0, nbrOfItems-1 do
+					--for each item 
+					item =  reaper.GetTrackMediaItem( track, j )--we get current item info
+					itemStart = reaper.GetMediaItemInfo_Value( item, "D_POSITION" )
+					itemLen = reaper.GetMediaItemInfo_Value( item, "D_LENGTH" )
+					itemEnd = itemStart+itemLen
 
-					if itemEnd > lastItemTimeEnd then
-					--if the selected item ends later than the previous, we use this end time as new project end time
-					lastItemTimeEnd = itemEnd
+						if item ~=nil and itemEnd > lastItemTimeEnd then
+						--if the selected item ends later than the previous, we use this end time as new project end time
+						lastItemTimeEnd = itemEnd
+						end
+
 					end
-
 				end
 			end
+
+
+		--  
+		--	[[ Then we look for the end of the last marker and/or region ]]
+		-- 	
+			local lastMarkerRegionTimeEnd=0
+			retval, num_markers, num_regions = reaper.CountProjectMarkers(0)
+			-- Debug(num_regions)
+			lastRegionIdx= num_regions+1 
+			-- Debug(lastRegionIdx)
+			for i=0, retval-1 do
+				_, isrgn, pos, rgnend, name, markrgnindexnumber = reaper.EnumProjectMarkers2( 0,i)
+				
+					if pos > rgnend then
+						lastMarkerRegionTimeEnd=pos
+					else
+						lastMarkerRegionTimeEnd=rgnend
+					end
+			end
+			-- Debug(lastMarkerRegionTimeEnd)
+		
+		
+		--
+		--  [[ we return the highest value]]
+		--
+		if lastItemTimeEnd > lastMarkerRegionTimeEnd then
+			lastElementTimeEnd=lastItemTimeEnd
+		else
+			lastElementTimeEnd=lastMarkerRegionTimeEnd
 		end
-	return lastItemTimeEnd
+		
+	-- Debug(lastElementTimeEnd)
+	return lastElementTimeEnd
 	end
 
 	--- Allow us to make the script toggled (on/off) in the action list. This way it can be persistant at reaper satartup
