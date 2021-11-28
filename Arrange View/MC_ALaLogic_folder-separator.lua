@@ -3,7 +3,7 @@
    * Author: Mathieu CONAN   
    * Version: 0.1.1
    * About: This script aims to reproduce the folder separation in a way Logic X does it.
-   * Links: Some useful links
+   * @links 
 		Github repository https://github.com/MathieuCGit/MC_VariousScripts
 		User profile https://forum.cockos.com/member.php?u=153781
 		Forum Thread
