@@ -23,24 +23,6 @@
 ]]></description>
         <link rel="website" href="https://github.com/MathieuCGit/MC_VariousScripts">Github repository</link>
       </metadata>
-      <version name="0.1" author="Mathieu CONAN" time="2021-11-19T23:41:53Z">
-        <source main="main">https://github.com/MathieuCGit/MC_VariousScripts/raw/583c9cc241dcd5b993ad2baa9c0e010e52fb3eb8/Arrange%20View/MC_ALaLogic_folder-separator.lua</source>
-      </version>
-      <version name="0.1.1" author=": Mathieu CONAN" time="2021-11-28T18:13:21Z">
-        <source main="main">https://github.com/MathieuCGit/MC_VariousScripts/raw/b05759cc14aca592cfe48864b447c07c1e65cb2d/Arrange%20View/MC_ALaLogic_folder-separator.lua</source>
-      </version>
-      <version name="0.1.2" author="Mathieu CONAN" time="2021-11-28T19:01:40Z">
-        <changelog><![CDATA[Current Version]]></changelog>
-        <source main="main">https://github.com/MathieuCGit/MC_VariousScripts/raw/9a3d6cf5b477849764aa475a6661454c79374df6/Arrange%20View/MC_ALaLogic_folder-separator.lua</source>
-      </version>
-      <version name="0.1.3" author="Mathieu CONAN" time="2021-11-28T20:02:25Z">
-        <changelog><![CDATA[ReaPack description improvment]]></changelog>
-        <source main="main">https://github.com/MathieuCGit/MC_VariousScripts/raw/b58c48816201068acceba3f76525198db9fc0a88/Arrange%20View/MC_ALaLogic_folder-separator.lua</source>
-      </version>
-      <version name="0.1.4" author="Mathieu CONAN" time="2021-11-28T22:34:01Z">
-        <changelog><![CDATA[Add developers documentation]]></changelog>
-        <source main="main">https://github.com/MathieuCGit/MC_VariousScripts/raw/67a31eb3886523ffabbd1168105280b52c2737a0/Arrange%20View/MC_ALaLogic_folder-separator.lua</source>
-      </version>
     </reapack>
   </category>
   <metadata>
