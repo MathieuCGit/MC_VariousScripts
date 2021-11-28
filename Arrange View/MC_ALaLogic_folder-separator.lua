@@ -1,11 +1,13 @@
 --[[-- 
+	#Draw separator on folder track - aka A la Logic X
 ]]--
--- Description: Draw separator on folder track - aka A la Logic X
--- Author: Mathieu CONAN   
--- Version: 0.0.1
--- Changelog: Initial release
--- Link: Github repository https://github.com/MathieuCGit/MC_VariousScripts
---[[ About: This script aims to reproduce the folder separation in a way Logic X does it.
+
+-- @description Draw separator on folder track - aka A la Logic X
+-- @author Mathieu CONAN   
+-- @version 0.0.1
+-- @changelog Initial release
+-- @link Github repository https://github.com/MathieuCGit/MC_VariousScripts
+--[[ @about This script aims to reproduce the folder separation in a way Logic X does it.
    ## Draw separator on folder track
 
    This script aimes to provide a mechanism similar to the one in LogicProX to separate 
@@ -40,7 +42,7 @@
 
 ---
  ]]--
--- Licence: GPL V3.0
+-- @licence: GPL V3.0
 
 
 --
