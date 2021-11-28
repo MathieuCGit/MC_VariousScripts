@@ -197,22 +197,35 @@ ITEM_LOCK=1 -- 1 means items is locked and can't be moved/cut/split/nothing. But
 		--	[[ Then we look for the end of the last marker and/or region ]]
 		-- 	
 			local lastMarkerRegionTimeEnd=0
-			retval, num_markers, num_regions = reaper.CountProjectMarkers(0)
-			-- Debug(num_regions)
-			lastRegionIdx= num_regions+1 
-			-- Debug(lastRegionIdx)
+			local retval, num_markers, num_regions = reaper.CountProjectMarkers(0)-- we need numner of region/markers
+			local markerJumper=0
+			local regionJumper=0
+			
 			for i=0, retval-1 do
-				_, isrgn, pos, rgnend, name, markrgnindexnumber = reaper.EnumProjectMarkers2( 0,i)
+			--for each marker and/or region
+				_, isrgn, pos, rgnend, name, markrgnindexnumber = reaper.EnumProjectMarkers2( 0,i)--we get position and end infos
 				
-					if pos > rgnend then
-						lastMarkerRegionTimeEnd=pos
-					else
-						lastMarkerRegionTimeEnd=rgnend
-					end
+				if pos > markerJumper then
+				--we get the last marker position
+					markerJumper = pos
+				end
+				
+				if rgnend > regionJumper then
+				--we get the last region end time
+					regionJumper = rgnend
+				end
+				
 			end
-			-- Debug(lastMarkerRegionTimeEnd)
-		
-		
+
+			-- if marker position is higher than region end position
+			-- the marker is later than region end
+			--otherwise, the region end is later.
+			if markerJumper > regionJumper then
+				lastMarkerRegionTimeEnd=markerJumper
+			else
+				lastMarkerRegionTimeEnd=regionJumper
+			end
+
 		--
 		--  [[ we return the highest value]]
 		--
