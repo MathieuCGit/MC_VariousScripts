@@ -25,10 +25,6 @@
         <changelog><![CDATA[ReaPack description improvment]]></changelog>
         <source main="main">https://github.com/MathieuCGit/MC_VariousScripts/raw/b58c48816201068acceba3f76525198db9fc0a88/Arrange%20View/MC_ALaLogic_folder-separator.lua</source>
       </version>
-      <version name="0.1.4" author="Mathieu CONAN" time="2021-11-28T22:06:01Z">
-        <changelog><![CDATA[ReaPack description improvment]]></changelog>
-        <source main="main">https://github.com/MathieuCGit/MC_VariousScripts/raw/459f55e0b9ac145c857d21f2979b4a053dd57c59/Arrange%20View/MC_ALaLogic_folder-separator.lua</source>
-      </version>
     </reapack>
   </category>
   <metadata>
