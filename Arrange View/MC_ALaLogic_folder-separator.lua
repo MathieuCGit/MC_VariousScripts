@@ -3,13 +3,13 @@
 	* Author: Mathieu CONAN   
 	* Version: 0.1.2
 	* About: This script aims to reproduce the folder separation in a way Logic X does it.
-	* Links:	Github repository https://github.com/MathieuCGit/MC_VariousScripts
-	*	User profile https://forum.cockos.com/member.php?u=153781
-	* Changelog: Current Version
-	*	2021-11-28
-	*		+ The script now take care of marker positions and regions end
-	*	2021-11-19
-	*		+ Initial Release
+	* Links: Github repository https://github.com/MathieuCGit/MC_VariousScripts
+		User profile https://forum.cockos.com/member.php?u=153781
+	* Changelog: 2021-11-28
+		
+			+ The script now take care of marker positions and regions end
+		2021-11-19
+			+ Initial Release
 	* Licence: GPL V3.0
 --]]
 
