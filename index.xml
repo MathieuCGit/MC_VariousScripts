@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="MC_VariousScripts" commit="67a31eb3886523ffabbd1168105280b52c2737a0">
+<index version="1" name="MC_VariousScripts" commit="3d6bd4379524c01a787971ac5325ec7f2f71c112">
   <category name="Arrange View">
     <reapack name="MC_ALaLogic_folder-separator.lua" type="script" desc="Draw separator on folder track - aka A la Logic X">
       <metadata>
@@ -8,21 +8,14 @@
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 This script aims to reproduce the folder separation in a way Logic X does it.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Draw separator on folder track\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 This script aimes to provide a mechanism similar to the one in LogicProX to separate folders in the Arrange View.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Options\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 TRACK_HEIGHT\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 this MUST be AT LEAST 2 pixels higher than the size defined in Preferences > Apparence > Media > "Hide labels for items when item take lane height is less than". You also have to uncheck "draw labels above items, rather than within items" Default value is 28 but I got better result with 20pixels. Default 6 and dafault 5 theme TRACK_HEIGHT=25. Also work with Jane, Funktion, Other tested themes and values : iLogic V2 = 28 iLogic V3 = 24 Flat Madness and CubeXD= 22\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 TRACK_COLOR_SINGLE\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 do you want all the item folder to get the same color ? Otherwise, default folder track color will be used. Default is 0\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 ##TRACK_COLOR use RGB color code. Default is \{111,121,131\}\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 TRACK_COLOR_DARKER_STEP\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 this is the amount of darkness yo uwant to apply to default track color. 0 means NO darkness. Default is 25\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 User profile https://forum.cockos.com/member.php?u=153781\par}
 }
 ]]></description>
         <link rel="website" href="https://github.com/MathieuCGit/MC_VariousScripts">Github repository</link>
       </metadata>
+      <version name="0.0.1" author="Mathieu CONAN" time="2021-11-28T23:08:05Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/MathieuCGit/MC_VariousScripts/raw/3d6bd4379524c01a787971ac5325ec7f2f71c112/Arrange%20View/MC_ALaLogic_folder-separator.lua</source>
+      </version>
     </reapack>
   </category>
   <metadata>
