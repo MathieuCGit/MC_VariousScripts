@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="MC_VariousScripts" commit="b05759cc14aca592cfe48864b447c07c1e65cb2d">
+<index version="1" name="MC_VariousScripts" commit="b500426572675b6bdf93fe85243e88b2dff54bf6">
   <category name="Arrange View">
     <reapack name="MC_ALaLogic_folder-separator.lua" type="script" desc="Draw separator on folder track - aka A la Logic X">
       <metadata>
@@ -10,7 +10,6 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 This script aims to reproduce the folder separation in a way Logic X does it.\par}
 }
 ]]></description>
-        <link rel="website" href="https://github.com/MathieuCGit/MC_VariousScripts">Github repository</link>
       </metadata>
       <version name="0.1" author="Mathieu CONAN" time="2021-11-19T23:41:53Z">
         <source main="main">https://github.com/MathieuCGit/MC_VariousScripts/raw/583c9cc241dcd5b993ad2baa9c0e010e52fb3eb8/Arrange%20View/MC_ALaLogic_folder-separator.lua</source>
