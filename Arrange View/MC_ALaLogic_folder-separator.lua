@@ -3,7 +3,7 @@
    * Author: Mathieu CONAN   
    * Version: 0.1.1
    * About: This script aims to reproduce the folder separation in a way Logic X does it.
-   * Llinks: Some useful links
+   * Links: Some useful links
 		Github repository https://github.com/MathieuCGit/MC_VariousScripts
 		User profile https://forum.cockos.com/member.php?u=153781
 		Forum Thread
@@ -56,12 +56,14 @@ ITEM_LOCK=1 -- 1 means items is locked and can't be moved/cut/split/nothing. But
 	---create item on track passd in argument
 	-- @tparam track track a reaper track ressource
 	function createLogicXItem (track)
-		lastElementTimeEnd=getLastElementTimeEnd()
+		--We need the end's position of the last element in the arrange view timeline.
+		lastElementTimeEnd=getLastElementTimeEnd()--See getLastElementTimeEnd() functions
+		
 		_,trackName = reaper.GetSetMediaTrackInfo_String( track, "P_NAME",0,0)-- get track name and 
-
-		endTime=lastElementTimeEnd+50
-		endTime=math.floor(endTime+0.5)--we need an integer so we round the float
-		startTime=0
+		
+		endTime=lastElementTimeEnd+50 -- margin to the end of the separator.
+		endTime=math.floor(endTime+0.5) -- we need an integer so we round the float
+		startTime=0 --well...separator starts at project's start
 		_, _ = reaper.GetSet_ArrangeView2( 0, 1, startTime, endTime )
 
 		-- and create an item which is project lenght
