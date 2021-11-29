@@ -48,9 +48,25 @@ https://forum.cockos.com/member.php?u=153781
 https://raw.githubusercontent.com/MathieuCGit/MC_VariousScripts/master/index.xml
 }}}
 \par}
-{\pard \ql \f0 \sa180 \li0 \fi0 \f1 ## MC_ALaLogic_TCP-folder-separator.lua\line
-\line
-This script aims to reproduce the folder separation in a way Logic X does it.\line
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Table of contents\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "#mc-reapack-repository"}}{\fldrslt{\ul
+MC Reapack repository
+}}}
+\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab {\field{\*\fldinst{HYPERLINK "#mc_alalogic_tcp-folder-separatorlua"}}{\fldrslt{\ul
+MC_ALaLogic_TCP-folder-separator.lua
+}}}
+\par}
+{\pard \ql \f0 \sa0 \li1080 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "#draw-separator-on-folder-track"}}{\fldrslt{\ul
+Draw separator on folder track
+}}}
+\par}
+{\pard \ql \f0 \sa0 \li1080 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "#options"}}{\fldrslt{\ul
+Options
+}}}
+\sa180\sa180\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 MC_ALaLogic_TCP-folder-separator.lua\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 This script aims to reproduce the folder separation in a way Logic X does it.\line
 \line
 ![](../img/logic-screenshot01.png)\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 Draw separator on folder track\par}
