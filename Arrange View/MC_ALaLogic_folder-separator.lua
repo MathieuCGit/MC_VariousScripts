@@ -1,25 +1,22 @@
---[[-- 
-	#Draw separator on folder track - aka A la Logic X
-]]--
-
--- @description Draw separator on folder track - aka A la Logic X
--- @author Mathieu CONAN   
--- @version 0.0.1
--- @changelog Initial release
--- @link Github repository https://github.com/MathieuCGit/MC_VariousScripts
---[[ @about This script aims to reproduce the folder separation in a way Logic X does it.
+--[[--
+Description: Draw separator on folder track - aka A la Logic X
+Author: Mathieu CONAN   
+Version: 0.0.1
+Changelog: Initial release
+Link: Github repository https://github.com/MathieuCGit/MC_VariousScripts
+About: This script aims to reproduce the folder separation in a way Logic X does it.
    ## Draw separator on folder track
 
    This script aimes to provide a mechanism similar to the one in LogicProX to separate 
    folders in the Arrange View.
 
----
+   ---
    ## Options
 
    Actually you have to customize your preferences directly into the script.
 
 
-  **``TRACK_HEIGHT``**
+   **``TRACK_HEIGHT``**
     This **MUST** be **AT LEAST** 2 pixels higher than the size defined in Preferences > Apparence > Media > "Hide labels for items when item take lane height is less than". 
     You also have to uncheck "draw labels above items, rather than within items"
     _Default value is **``28``**_ but I got better result with 20pixels.
@@ -40,9 +37,8 @@
   
    User profile [https://forum.cockos.com/member.php?u=153781]([https://forum.cockos.com/member.php?u=153781])
 
----
- ]]--
--- @licence: GPL V3.0
+   ---
+]]--
 
 
 --
