@@ -6,7 +6,7 @@
     <title>MC Reapack repository - MC Various Scripts</title>
 	<link href="../prism.css?96eaf67" rel="stylesheet" />
     <link rel="stylesheet" href="../luadox.css?96eaf67" type="text/css">
-    
+    <link href="../custom.css?96eaf67" rel="stylesheet" />
 </head>
 <body class="manual-readme">
 <div class="topbar">
@@ -14,9 +14,9 @@
 <div class="description"><span>MC Various Scripts</span></div>
 </div>
 <div class="group two">
+<div class="button iconleft"><a href="https://github.com/MathieuCGit/MC_VariousScripts" title=""><img src="../img/i-github.svg?96eaf67" alt=""/><span>GitHub</span></a></div>
 </div>
 <div class="group three">
-<div class="button iconright"><a href="../module/MC_ALaLogic_folder-separator.lua.html" title="MC_ALaLogic_folder-separator.lua"><span>Next</span><img src="../img/i-right.svg?96eaf67" alt=""/></a></div>
 </div>
 </div>
 <div class="sidebar">
@@ -35,12 +35,6 @@
 <li class="selected"><a href="../manual/readme.html">MC Reapack repository</a></li>
 </ul>
 </div>
-<div class="modules">
-<div class="heading">Modules</div>
-<ul>
-<li><a href="../module/MC_ALaLogic_folder-separator.lua.html">MC_ALaLogic_folder-separator.lua</a></li>
-</ul>
-</div>
 </div>
 <div class="body">
 <div class="manual">
@@ -49,6 +43,33 @@
 </h1>
 <p>This repository contains some scripts for Cockos Reaper D.A.W.</p>
 <p>To use these scripts you can install them by using this URL in Reapack : <a href="https://raw.githubusercontent.com/MathieuCGit/MC_VariousScripts/master/index.xml">https://raw.githubusercontent.com/MathieuCGit/MC_VariousScripts/master/index.xml</a></p>
+<h2>MC_ALaLogic_TCP-folder-separator.lua</h2>
+<p>This script aims to reproduce the folder separation in a way Logic X does it.</p>
+<p><img src="../img/logic-screenshot01.png" alt="" /></p>
+<h3>Draw separator on folder track</h3>
+<p>This script aimes to provide a mechanism similar to the one in LogicProX to separate
+folders in the Arrange View.</p>
+<hr />
+<h3>Options</h3>
+<p>Actually you have to customize your preferences directly into the script.</p>
+<p><strong><code>TRACK_HEIGHT</code></strong>
+This <strong>MUST</strong> be <strong>AT LEAST</strong> 2 pixels higher than the size defined in Preferences &gt; Apparence &gt; Media &gt; &quot;Hide labels for items when item take lane height is less than&quot;.
+You also have to uncheck &quot;draw labels above items, rather than within items&quot;
+<em>Default value is <strong><code>28</code></strong></em> but I got better result with 20pixels.</p>
+<ul>
+<li>Default 6 and dafault 5 theme TRACK_HEIGHT=25.</li>
+<li>25 Also works with Jane, Funktion.</li>
+<li>iLogic V2 = 28</li>
+<li>iLogic V3 = 24</li>
+<li>Flat Madness and CubeXD= 22</li>
+</ul>
+<p><strong><code>TRACK_COLOR_SINGLE</code></strong>
+Do you want all the item folder to get the same color ? Otherwise, default folder track color will be used. <em>Default is <strong><code>0</code></strong></em></p>
+<p><strong><code>TRACK_COLOR</code></strong>
+Use RGB color code. <em>Default is <strong><code>{111,121,131}</code></strong></em></p>
+<p><strong><code>TRACK_COLOR_DARKER_STEP</code></strong>
+This is the amount of darkness yo uwant to apply to default track color. 0 means NO darkness. <em>Default is <strong><code>25</code></strong></em></p>
+<hr />
 
 </div>
 </div>

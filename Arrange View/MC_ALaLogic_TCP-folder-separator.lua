@@ -5,13 +5,14 @@ Version: 0.0.1
 Changelog: Initial release
 Link: Github repository https://github.com/MathieuCGit/MC_VariousScripts
 About: This script aims to reproduce the folder separation in a way Logic X does it.
-   ## Draw separator on folder track
+
+   ### Draw separator on folder track
 
    This script aimes to provide a mechanism similar to the one in LogicProX to separate 
    folders in the Arrange View.
 
    ---
-   ## Options
+   ### Options
 
    Actually you have to customize your preferences directly into the script.
 
@@ -35,7 +36,7 @@ About: This script aims to reproduce the folder separation in a way Logic X does
    **``TRACK_COLOR_DARKER_STEP``**
     This is the amount of darkness yo uwant to apply to default track color. 0 means NO darkness. _Default is **``25``**_
   
-   User profile [https://forum.cockos.com/member.php?u=153781]([https://forum.cockos.com/member.php?u=153781])
+   User profile [https://forum.cockos.com/member.php?u=153781](https://forum.cockos.com/member.php?u=153781)
 
    ---
 ]]--
@@ -68,14 +69,10 @@ ITEM_LOCK=1 -- 1 means items is locked and can't be moved/cut/split/nothing. But
 --
 
 	--- Draw separator on folder track - aka A la Logic X
-	--@module MC_ALaLogic_folder-separator.lua
-
-	---Debug tools
-	--
-	--@section debug
+	-- @module MC_ALaLogic_TCP-folder-separator.lua
 	
 	---Debug function - display messages in reaper console
-	--@tparam string String aims to be displayed in the reaper console
+	-- @tparam string String aims to be displayed in the reaper console
 	function Debug(String)
 		reaper.ShowConsoleMsg(tostring(String).."\n")
 	end
@@ -175,7 +172,7 @@ ITEM_LOCK=1 -- 1 means items is locked and can't be moved/cut/split/nothing. But
     end
   
 	--- check if an item located on folder track contains MIDI data
-	--@tparam item item a Reaper media item
+	-- @tparam item item a Reaper media item
 	function doesItemContainsMidiData(item)
 		if item ~= nil then --if there is an item
 		take=reaper.GetActiveTake(item) -- we get the active take from it
@@ -192,7 +189,7 @@ ITEM_LOCK=1 -- 1 means items is locked and can't be moved/cut/split/nothing. But
 	end
   
 	---We get the end of the lastest element in the project. Element means items, markers and regions
-    --@treturn int lastElementTimeEnd is the time in second of the end of the last element on the timeline
+    -- @treturn int lastElementTimeEnd is the time in second of the end of the last element on the timeline
 	function getLastElementTimeEnd()
 		local lastElementTimeEnd=0
 		local lastItemTimeEnd=0
@@ -274,7 +271,7 @@ ITEM_LOCK=1 -- 1 means items is locked and can't be moved/cut/split/nothing. But
 	return lastElementTimeEnd
 	end
 
-	--- Allow us to make the script toggled (on/off) in the action list. This way it can be persistant at reaper satartup
+	-- Allow us to make the script toggled (on/off) in the action list. This way it can be persistant at reaper satartup
 	-- this function is a total and unshamed copy/paste from awesome Lokasenna - Track selection follows item selection
 	-- https://raw.githubusercontent.com/ReaTeam/ReaScripts/master/Items Properties/Lokasenna_Track selection follows item selection.lua
 	(function()
