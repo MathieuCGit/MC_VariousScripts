@@ -4,7 +4,12 @@ This repository contains some scripts for Cockos Reaper D.A.W.
 
 To use these scripts you can install them by using this URL in Reapack : [https://raw.githubusercontent.com/MathieuCGit/MC_VariousScripts/master/index.xml](https://raw.githubusercontent.com/MathieuCGit/MC_VariousScripts/master/index.xml)
 
-	## MC_ALaLogic_TCP-folder-separator.lua
+- [Table of contents](#table-of-contents)
+    - [TCP Folder Separators - Aka Logic Pro X separators](#tcp-folder-separators---aka-logic-pro-x-separators)
+        - [Draw separator on folder track](#draw-separator-on-folder-track)
+        - [Options](#options)
+
+  ## TCP Folder Separators - Aka Logic Pro X separators
 
 	This script aims to reproduce the folder separation in a way Logic X does it.
 
