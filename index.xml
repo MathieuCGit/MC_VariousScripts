@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="MC_VariousScripts" commit="6009f4b25aacb764b1088fbccfbcde76998d2e07">
-<category name="Arrange View"><reapack name="MC_ALaLogic_folder-separator.lua" type="script" desc="Draw separator on folder track - aka A la Logic X"><metadata><description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+<index version="1" name="MC_VariousScripts" commit="aa669ddae5bd7532e3f6e8b1eb7095061bb15573">
+  <category name="Arrange View">
+    <reapack name="MC_ALaLogic_TCP-folder-separator.lua" type="script" desc="Draw separator on folder track - aka A la Logic X">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 This script aims to reproduce the folder separation in a way Logic X does it.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Draw separator on folder track\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 Draw separator on folder track\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 This script aimes to provide a mechanism similar to the one in LogicProX to separate folders in the Arrange View.\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Options\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 Options\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 Actually you have to customize your preferences directly into the script.\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 {\b {\f1 TRACK_HEIGHT}} This {\b MUST} be {\b AT LEAST} 2 pixels higher than the size defined in Preferences > Apparence > Media > "Hide labels for items when item take lane height is less than". You also have to uncheck "draw labels above items, rather than within items" {\i Default value is {\b {\f1 28}}} but I got better result with 20pixels.\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Default 6 and dafault 5 theme TRACK_HEIGHT=25.\par}
@@ -19,13 +22,23 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 {\b {\f1 TRACK_COLOR_SINGLE}} Do you want all the item folder to get the same color ? Otherwise, default folder track color will be used. {\i Default is {\b {\f1 0}}}\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 {\b {\f1 TRACK_COLOR}} Use RGB color code. {\i Default is {\b {\f1 \{111,121,131\}}}}\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 {\b {\f1 TRACK_COLOR_DARKER_STEP}} This is the amount of darkness yo uwant to apply to default track color. 0 means NO darkness. {\i Default is {\b {\f1 25}}}\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 User profile {\field{\*\fldinst{HYPERLINK "[https://forum.cockos.com/member.php?u=153781]"}}{\fldrslt{\ul
+{\pard \ql \f0 \sa180 \li0 \fi0 User profile {\field{\*\fldinst{HYPERLINK "https://forum.cockos.com/member.php?u=153781"}}{\fldrslt{\ul
 https://forum.cockos.com/member.php?u=153781
 }}}
 \par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 }
-]]></description><link rel="website" href="https://github.com/MathieuCGit/MC_VariousScripts">Github repository</link></metadata><version name="0.1" author="URI: https://forum.cockos.com/member.php?u=153781" time="2021-11-19T23:41:53Z"><source main="main">https://github.com/MathieuCGit/MC_VariousScripts/raw/583c9cc241dcd5b993ad2baa9c0e010e52fb3eb8/Arrange%20View/MC_ALaLogic_folder-separator.lua</source></version><version name="0.1.1" author=": Mathieu CONAN" time="2021-11-28T18:13:21Z"><source main="main">https://github.com/MathieuCGit/MC_VariousScripts/raw/b05759cc14aca592cfe48864b447c07c1e65cb2d/Arrange%20View/MC_ALaLogic_folder-separator.lua</source></version><version name="0.1.2" author="Mathieu CONAN" time="2021-11-28T19:01:40Z"><changelog><![CDATA[Current Version]]></changelog><source main="main">https://github.com/MathieuCGit/MC_VariousScripts/raw/9a3d6cf5b477849764aa475a6661454c79374df6/Arrange%20View/MC_ALaLogic_folder-separator.lua</source></version><version name="0.1.3" author="Mathieu CONAN" time="2021-11-28T20:02:25Z"><changelog><![CDATA[ReaPack description improvment]]></changelog><source main="main">https://github.com/MathieuCGit/MC_VariousScripts/raw/b58c48816201068acceba3f76525198db9fc0a88/Arrange%20View/MC_ALaLogic_folder-separator.lua</source></version><version name="0.1.4" author="Mathieu CONAN" time="2021-11-28T22:06:01Z"><changelog><![CDATA[ReaPack description improvment]]></changelog><source main="main">https://github.com/MathieuCGit/MC_VariousScripts/raw/459f55e0b9ac145c857d21f2979b4a053dd57c59/Arrange%20View/MC_ALaLogic_folder-separator.lua</source></version><version name="0.0.1" author="Mathieu CONAN" time="2021-11-28T23:08:05Z"><changelog><![CDATA[Initial release]]></changelog><source main="main">https://github.com/MathieuCGit/MC_VariousScripts/raw/3d6bd4379524c01a787971ac5325ec7f2f71c112/Arrange%20View/MC_ALaLogic_folder-separator.lua</source></version></reapack></category><metadata><description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+]]></description>
+        <link rel="website" href="https://github.com/MathieuCGit/MC_VariousScripts">Github repository</link>
+      </metadata>
+      <version name="0.0.1" author="Mathieu CONAN" time="2021-11-29T18:49:25Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/MathieuCGit/MC_VariousScripts/raw/aa669ddae5bd7532e3f6e8b1eb7095061bb15573/Arrange%20View/MC_ALaLogic_TCP-folder-separator.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <metadata>
+    <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
@@ -35,5 +48,43 @@ https://forum.cockos.com/member.php?u=153781
 https://raw.githubusercontent.com/MathieuCGit/MC_VariousScripts/master/index.xml
 }}}
 \par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Table of contents\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "#mc-reapack-repository"}}{\fldrslt{\ul
+MC Reapack repository
+}}}
+\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab {\field{\*\fldinst{HYPERLINK "#mc_alalogic_tcp-folder-separatorlua"}}{\fldrslt{\ul
+MC_ALaLogic_TCP-folder-separator.lua
+}}}
+\par}
+{\pard \ql \f0 \sa0 \li1080 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "#draw-separator-on-folder-track"}}{\fldrslt{\ul
+Draw separator on folder track
+}}}
+\par}
+{\pard \ql \f0 \sa0 \li1080 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "#options"}}{\fldrslt{\ul
+Options
+}}}
+\sa180\sa180\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 MC_ALaLogic_TCP-folder-separator.lua\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 This script aims to reproduce the folder separation in a way Logic X does it.\line
+\line
+![](../img/logic-screenshot01.png)\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 Draw separator on folder track\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 This script aimes to provide a mechanism similar to the one in LogicProX to separate folders in the Arrange View.\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 Options\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Actually you have to customize your preferences directly into the script.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b {\f1 TRACK_HEIGHT}} This {\b MUST} be {\b AT LEAST} 2 pixels higher than the size defined in Preferences > Apparence > Media > "Hide labels for items when item take lane height is less than". You also have to uncheck "draw labels above items, rather than within items" {\i Default value is {\b {\f1 28}}} but I got better result with 20pixels.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Default 6 and dafault 5 theme TRACK_HEIGHT=25.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab 25 Also works with Jane, Funktion.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab iLogic V2 = 28\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab iLogic V3 = 24\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Flat Madness and CubeXD= 22\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b {\f1 TRACK_COLOR_SINGLE}} Do you want all the item folder to get the same color ? Otherwise, default folder track color will be used. {\i Default is {\b {\f1 0}}}\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b {\f1 TRACK_COLOR}} Use RGB color code. {\i Default is {\b {\f1 \{111,121,131\}}}}\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b {\f1 TRACK_COLOR_DARKER_STEP}} This is the amount of darkness yo uwant to apply to default track color. 0 means NO darkness. {\i Default is {\b {\f1 25}}}\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 }
-]]></description></metadata></index>
+]]></description>
+  </metadata>
+</index>
