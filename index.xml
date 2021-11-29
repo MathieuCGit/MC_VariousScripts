@@ -42,46 +42,12 @@ https://forum.cockos.com/member.php?u=153781
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 MC Reapack repository\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 MC Reapack repository - Various Scripts\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 This repository contains some scripts for Cockos Reaper D.A.W.\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 To use these scripts you can install them by using this URL in Reapack : {\field{\*\fldinst{HYPERLINK "https://raw.githubusercontent.com/MathieuCGit/MC_VariousScripts/master/index.xml"}}{\fldrslt{\ul
 https://raw.githubusercontent.com/MathieuCGit/MC_VariousScripts/master/index.xml
 }}}
 \par}
-{\pard \ql \f0 \sa180 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "#table-of-contents"}}{\fldrslt{\ul
-Table of contents
-}}}
-\par}
-{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab {\field{\*\fldinst{HYPERLINK "#tcp-folder-separators---aka-logic-pro-x-separators"}}{\fldrslt{\ul
-TCP Folder Separators - Aka Logic Pro X separators
-}}}
-\par}
-{\pard \ql \f0 \sa0 \li1080 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "#draw-separator-on-folder-track"}}{\fldrslt{\ul
-Draw separator on folder track
-}}}
-\par}
-{\pard \ql \f0 \sa0 \li1080 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "#options"}}{\fldrslt{\ul
-Options
-}}}
-\sa180\sa180\par}
-{\pard \ql \f0 \sa180 \li360 \fi0 \b \fs32 TCP Folder Separators - Aka Logic Pro X separators\par}
-{\pard \ql \f0 \sa180 \li360 \fi0 This script aims to reproduce the folder separation in a way Logic X does it.\par}
-{\pard \ql \f0 \sa180 \li360 \fi0 {\cf1 [image: ../img/logic-screenshot01.png]\cf0}\par}
-{\pard \ql \f0 \sa180 \li360 \fi0 \b \fs28 Draw separator on folder track\par}
-{\pard \ql \f0 \sa180 \li360 \fi0 This script aimes to provide a mechanism similar to the one in LogicProX to separate folders in the Arrange View.\par}
-{\pard \qc \f0 \sa180 \li360 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
-{\pard \ql \f0 \sa180 \li360 \fi0 \b \fs28 Options\par}
-{\pard \ql \f0 \sa180 \li360 \fi0 Actually you have to customize your preferences directly into the script.\par}
-{\pard \ql \f0 \sa180 \li360 \fi0 {\b {\f1 TRACK_HEIGHT}} This {\b MUST} be {\b AT LEAST} 2 pixels higher than the size defined in Preferences > Apparence > Media > "Hide labels for items when item take lane height is less than". You also have to uncheck "draw labels above items, rather than within items" {\i Default value is {\b {\f1 28}}} but I got better result with 20pixels.\par}
-{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Default 6 and dafault 5 theme TRACK_HEIGHT=25.\par}
-{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab 25 Also works with Jane, Funktion.\par}
-{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab iLogic V2 = 28\par}
-{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab iLogic V3 = 24\par}
-{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Flat Madness and CubeXD= 22\sa180\par}
-{\pard \ql \f0 \sa180 \li360 \fi0 {\b {\f1 TRACK_COLOR_SINGLE}} Do you want all the item folder to get the same color ? Otherwise, default folder track color will be used. {\i Default is {\b {\f1 0}}}\par}
-{\pard \ql \f0 \sa180 \li360 \fi0 {\b {\f1 TRACK_COLOR}} Use RGB color code. {\i Default is {\b {\f1 \{111,121,131\}}}}\par}
-{\pard \ql \f0 \sa180 \li360 \fi0 {\b {\f1 TRACK_COLOR_DARKER_STEP}} This is the amount of darkness yo uwant to apply to default track color. 0 means NO darkness. {\i Default is {\b {\f1 25}}}\par}
-{\pard \qc \f0 \sa180 \li360 \fi0 \emdash\emdash\emdash\emdash\emdash\sa180\par}
 }
 ]]></description>
   </metadata>
