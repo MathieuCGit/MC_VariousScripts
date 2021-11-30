@@ -36,8 +36,6 @@ About: This script aims to reproduce the folder separation in a way Logic X does
    **``TRACK_COLOR_DARKER_STEP``**
     This is the amount of darkness yo uwant to apply to default track color. 0 means NO darkness. _Default is **``25``**_
   
-   User profile [https://forum.cockos.com/member.php?u=153781](https://forum.cockos.com/member.php?u=153781)
-
    ---
 ]]--
 
@@ -46,32 +44,24 @@ About: This script aims to reproduce the folder separation in a way Logic X does
 --[[ USER CUSTOMIZATION ]]--
 --
 
--- this MUST be AT LEAST 2 pixels higher than the size defined in Preferences > Apparence > Media > "Hide labels for items when item take lane height is less than". 
---You also have to uncheck "draw labels above items, rather than within items"
--- Default value is 28 but I got better result with 20pixels.
--- Default 6 and dafault 5 theme TRACK_HEIGHT=25. Also work with Jane, Funktion, 
--- Other tested themes and values :
--- iLogic V2 = 28
--- iLogic V3 = 24
--- Flat Madness and CubeXD= 22
-TRACK_HEIGHT=22 --height in pixel
-
-TRACK_COLOR_SINGLE=0 --do you want all the item folder to get the same color ? Otherwise, default folder track color will be used. Default is 0
-TRACK_COLOR={111,121,131} -- use RGB color code. Default is {111,121,131}
-
-TRACK_COLOR_DARKER_STEP = 25 --this is the amount of darkness yo uwant to apply to default track color. 0 means NO darkness. Default is 25
-
-ITEM_LOCK=1 -- 1 means items is locked and can't be moved/cut/split/nothing. But actually Reaper allows unwanted behaviour to locked item (split!!) so this option is for future versions. Default is 1
-
+-- See About section above to learn more about those options
+TRACK_HEIGHT=22
+TRACK_COLOR_SINGLE=0
+TRACK_COLOR={111,121,131}
+TRACK_COLOR_DARKER_STEP = 25
+ITEM_LOCK=1
 
 --
 --[[ Various Functions]]
 --
 
-	--- Draw separator on folder track - aka A la Logic X
-	-- @module MC_ALaLogic_TCP-folder-separator.lua
+	--- Various Scripts
+	-- @module Various_Scripts
 	
-	---Debug function - display messages in reaper console
+	--- TCP - Create a folder separator in arrange view
+	-- @section TCP_folder_separator
+	
+	--- Debug function - display messages in reaper console
 	-- @tparam string String aims to be displayed in the reaper console
 	function Debug(String)
 		reaper.ShowConsoleMsg(tostring(String).."\n")
