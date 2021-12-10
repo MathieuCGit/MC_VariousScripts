@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="MC_VariousScripts" commit="aa669ddae5bd7532e3f6e8b1eb7095061bb15573">
+<index version="1" name="MC_VariousScripts" commit="ee38d45504a07aedf0fa7ba08a66a60d0841c9e4">
   <category name="Arrange View">
     <reapack name="MC_ALaLogic_TCP-folder-separator.lua" type="script" desc="Draw separator on folder track - aka A la Logic X">
       <metadata>
@@ -22,10 +22,6 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 {\b {\f1 TRACK_COLOR_SINGLE}} Do you want all the item folder to get the same color ? Otherwise, default folder track color will be used. {\i Default is {\b {\f1 0}}}\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 {\b {\f1 TRACK_COLOR}} Use RGB color code. {\i Default is {\b {\f1 \{111,121,131\}}}}\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 {\b {\f1 TRACK_COLOR_DARKER_STEP}} This is the amount of darkness yo uwant to apply to default track color. 0 means NO darkness. {\i Default is {\b {\f1 25}}}\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 User profile {\field{\*\fldinst{HYPERLINK "https://forum.cockos.com/member.php?u=153781"}}{\fldrslt{\ul
-https://forum.cockos.com/member.php?u=153781
-}}}
-\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 }
 ]]></description>
