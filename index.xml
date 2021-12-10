@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="MC_VariousScripts" commit="ee38d45504a07aedf0fa7ba08a66a60d0841c9e4">
+<index version="1" name="MC_VariousScripts" commit="e3e3bf616fde4bc9eeb6275a666f1b32b47e1ca5">
   <category name="Arrange View">
     <reapack name="MC_ALaLogic_TCP-folder-separator.lua" type="script" desc="Draw separator on folder track - aka A la Logic X">
       <metadata>
@@ -30,6 +30,27 @@
       <version name="0.0.1" author="Mathieu CONAN" time="2021-11-29T18:49:25Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/MathieuCGit/MC_VariousScripts/raw/aa669ddae5bd7532e3f6e8b1eb7095061bb15573/Arrange%20View/MC_ALaLogic_TCP-folder-separator.lua</source>
+      </version>
+    </reapack>
+    <reapack name="MC_Move-edit-cursor-to-the-end-of-time-selection-while-playing.lua" type="script" desc="Move edit cursor to the end of time selection while playing">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 This script aims to improve video derush by constantly moving edit cursor at the end of time selecion while playing.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 Move edit cursor to the end of time selection while playing\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 This script aimes to replace edit cursor at the end time selection while we are playing.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 I mainly use it to improve video derush as it let me keep playing and create regions and if I stop, it restart from the end of my newly created region (which match with time selection here).\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 It runs in background (reaper.defer()) and acts as a toggle. So it constantly replace the cursor while playing.\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+}
+]]></description>
+        <link rel="website" href="https://github.com/MathieuCGit/MC_VariousScripts">Github repository</link>
+      </metadata>
+      <version name="0.0.1" author="Mathieu CONAN" time="2021-12-10T19:32:52Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/MathieuCGit/MC_VariousScripts/raw/e3e3bf616fde4bc9eeb6275a666f1b32b47e1ca5/Arrange%20View/MC_Move-edit-cursor-to-the-end-of-time-selection-while-playing.lua</source>
       </version>
     </reapack>
   </category>
