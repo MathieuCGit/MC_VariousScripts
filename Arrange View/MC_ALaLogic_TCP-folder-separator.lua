@@ -261,7 +261,7 @@ ITEM_LOCK=1
 	return lastElementTimeEnd
 	end
 
-	-- Allow us to make the script toggled (on/off) in the action list. This way it can be persistant at reaper satartup
+	-- Allow us to make the script toggled (on/off) in the action list. This way it can be use easier in toolbars
 	-- this function is a total and unshamed copy/paste from awesome Lokasenna - Track selection follows item selection
 	-- https://raw.githubusercontent.com/ReaTeam/ReaScripts/master/Items Properties/Lokasenna_Track selection follows item selection.lua
 	(function()
