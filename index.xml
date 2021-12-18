@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="MC_VariousScripts" commit="e3e3bf616fde4bc9eeb6275a666f1b32b47e1ca5">
+<index version="1" name="MC_VariousScripts" commit="6b22db0e9cf5fa8ab82b2f19fcb05a7549a6bff1">
   <category name="Arrange View">
     <reapack name="MC_ALaLogic_TCP-folder-separator.lua" type="script" desc="Draw separator on folder track - aka A la Logic X">
       <metadata>
@@ -51,6 +51,23 @@
       <version name="0.0.1" author="Mathieu CONAN" time="2021-12-10T19:32:52Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/MathieuCGit/MC_VariousScripts/raw/e3e3bf616fde4bc9eeb6275a666f1b32b47e1ca5/Arrange%20View/MC_Move-edit-cursor-to-the-end-of-time-selection-while-playing.lua</source>
+      </version>
+    </reapack>
+    <reapack name="MC_persistent_Rename-items-to-folder-and-track-name-item-number.lua" type="script" desc="Rename items to folder and track name item position number in the track">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 This script aims to rename item with folder name (if track is in folder) - track name - item position in the track\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 WARNING : it's a persistent script, continuously running in background.\par}
+}
+]]></description>
+        <link rel="website" href="https://github.com/MathieuCGit/MC_VariousScripts">Github repository</link>
+      </metadata>
+      <version name="0.0.1" author="Mathieu CONAN" time="2021-12-18T18:21:06Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/MathieuCGit/MC_VariousScripts/raw/6b22db0e9cf5fa8ab82b2f19fcb05a7549a6bff1/Arrange%20View/MC_persistent_Rename-items-to-folder-and-track-name-item-number.lua</source>
       </version>
     </reapack>
   </category>
