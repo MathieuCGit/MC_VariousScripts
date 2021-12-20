@@ -139,8 +139,8 @@ ITEM_LOCK=1
 		trackFolderDepth = reaper.GetMediaTrackInfo_Value( track, "I_FOLDERDEPTH") --we check if it's a folder or not
 
 			if trackFolderDepth > 0.0 then -- if we are on a folder track
-			reaper.SetMediaTrackInfo_Value(track, "B_HEIGHTLOCK",0)--unlock track height
 			deleteEmptyItemsOnTracks(track)
+			reaper.SetMediaTrackInfo_Value(track, "B_HEIGHTLOCK",0)--unlock track height
 			end
 		end
 	end
@@ -149,16 +149,18 @@ ITEM_LOCK=1
 	-- @tparam track track a reaper track ressource
     function deleteEmptyItemsOnTracks(track)
         local nbrOfItems= reaper.GetTrackNumMediaItems(track)--get nbre of items on this track
-        
-        for j=0, nbrOfItems-1 do --for each item on this track
-            item =  reaper.GetTrackMediaItem( track, j )--we get current item info
 
-            if doesItemContainsMidiData(item) == false then 
-           -- -- If the item doesn't contain MIDI data (ite means it's an empty item)
-                reaper.DeleteTrackMediaItem( track, item ) -- we delete selcted item
-            end
+		if nbrOfItems > 1 then
+		--if we have at least one item
+			for i=0, nbrOfItems-1 do --for each item on this track
+				item =  reaper.GetTrackMediaItem( track, i )--we get current item info
+
+				if doesItemContainsMidiData(item) == false then
+				-- If the item doesn't contain MIDI data (ite means it's an empty item)
+					reaper.DeleteTrackMediaItem( track, item ) -- we delete selcted item
+				end
+			end
         end
-        
     end
   
 	--- check if an item located on folder track contains MIDI data
@@ -287,14 +289,14 @@ ITEM_LOCK=1
 --
 function Main()
 	nbrOfTrack =  reaper.CountTracks(0)--nbre of track in the project
-  
+	
     for i=0, nbrOfTrack-1 do
     -- for each track
     track =  reaper.GetTrack( 0, i ) --we get info from the current track
     trackFolderDepth = reaper.GetMediaTrackInfo_Value( track, "I_FOLDERDEPTH") --we check if it's a folder or not
 
-        if trackFolderDepth > 0.0 then -- if we are on a folder track
-			deleteEmptyItemsOnTracks(track)--we clean the tracks from empty items    
+        if trackFolderDepth > 0.0 then -- if we are on a folder track   
+			deleteEmptyItemsOnTracks(track)--we clean the tracks from empty items
             createLogicXItem(track)-- Once track is cleared from empty items but still has items with MIDI data, we create an empty item
         end
     end
