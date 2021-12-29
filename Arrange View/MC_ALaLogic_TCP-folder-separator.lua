@@ -60,12 +60,6 @@ ITEM_LOCK=1
 	
 	--- TCP - Create a folder separator in arrange view
 	-- @section TCP_folder_separator
-	
-	--- Debug function - display messages in reaper console
-	-- @tparam string String aims to be displayed in the reaper console
-	function Debug(String)
-		reaper.ShowConsoleMsg(tostring(String).."\n")
-	end
 
 	---create item on track passd in argument
 	-- @tparam track track a reaper track ressource
@@ -312,9 +306,6 @@ end
 reaper.ShowConsoleMsg("")
 
 reaper.PreventUIRefresh(1)
-
--- Begining of the undo block. Leave it at the top of your main function.
-reaper.Undo_BeginBlock() 
 
 -- execute script core
 Main()
