@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="MC_VariousScripts" commit="6b22db0e9cf5fa8ab82b2f19fcb05a7549a6bff1">
+<index version="1" name="MC_VariousScripts" commit="da5e5df757cc88ce7a07b4149d6c2c2704029761">
   <category name="Arrange View">
     <reapack name="MC_ALaLogic_TCP-folder-separator.lua" type="script" desc="Draw separator on folder track - aka A la Logic X">
       <metadata>
@@ -30,6 +30,10 @@
       <version name="0.0.1" author="Mathieu CONAN" time="2021-11-29T18:49:25Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/MathieuCGit/MC_VariousScripts/raw/aa669ddae5bd7532e3f6e8b1eb7095061bb15573/Arrange%20View/MC_ALaLogic_TCP-folder-separator.lua</source>
+      </version>
+      <version name="0.0.2" author="Mathieu CONAN" time="2022-01-13T23:03:38Z">
+        <changelog><![CDATA[Fix : check for already existing data on folder track now check every kind of data and not only MIDI.]]></changelog>
+        <source main="main">https://github.com/MathieuCGit/MC_VariousScripts/raw/c92e9ac115fcb853ac2e4c89919fbd8d6f597521/Arrange%20View/MC_ALaLogic_TCP-folder-separator.lua</source>
       </version>
     </reapack>
     <reapack name="MC_Move-edit-cursor-to-the-end-of-time-selection-while-playing.lua" type="script" desc="Move edit cursor to the end of time selection while playing">
