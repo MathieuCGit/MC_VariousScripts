@@ -1,8 +1,8 @@
 --[[--
 Description: Draw separator on folder track - aka A la Logic X
 Author: Mathieu CONAN   
-Version: 0.0.1
-Changelog: Initial release
+Version: 0.0.2
+Changelog: Fix : check for already existing data on folder track now check every kind of data and not only MIDI.
 Link: Github repository https://github.com/MathieuCGit/MC_VariousScripts
 About: This script aims to reproduce the folder separation in a way Logic X does it.
 
@@ -60,6 +60,14 @@ ITEM_LOCK=1
 	
 	--- TCP - Create a folder separator in arrange view
 	-- @section TCP_folder_separator
+	
+	---Debug function - display messages in reaper console
+	--@tparam string String aims to be displayed in the reaper console
+	function dbg(String)
+
+	  reaper.ShowConsoleMsg(tostring(String).."\n")
+	end
+
 
 	---create item on track passd in argument
 	-- @tparam track track a reaper track ressource
@@ -149,30 +157,33 @@ ITEM_LOCK=1
 			for i=0, nbrOfItems-1 do --for each item on this track
 				item =  reaper.GetTrackMediaItem( track, i )--we get current item info
 
-				if doesItemContainsMidiData(item) == false then
+				if doesItemContainsData(item) == false then
 				-- If the item doesn't contain MIDI data (ite means it's an empty item)
 					reaper.DeleteTrackMediaItem( track, item ) -- we delete selcted item
 				end
 			end
         end
     end
-  
-	--- check if an item located on folder track contains MIDI data
+
+	--- check if an item located on folder track is really empty or contains audio or midi data
 	-- @tparam item item a Reaper media item
-	function doesItemContainsMidiData(item)
-		if item ~= nil then --if there is an item
+	-- @see deleteEmptyItemsOnTracks()
+	function doesItemContainsData(item)
+		if item ~= nil then
 		take=reaper.GetActiveTake(item) -- we get the active take from it
 			if take ~= nil then --if there is an active take
-				containsMidi = reaper.TakeIsMIDI( take ) -- we check if it contains MIDI data
+				p_source= reaper.GetMediaItemTake_Source(take)
+				typeOfSource = reaper.GetMediaSourceType(p_source)
 				--this check is very impotant to prevent removing already existing items with content onto folder tracks
-				if containsMidi == false then
-					return false
+				if typeOfSource == "EMPTY" then
+					return false --if item is empty we return false, understood as "item doesn't contain data"
 				else
-					return true
+					return true -- else we return that item contains data
 				end
 			end
 		end
 	end
+  
   
 	---We get the end of the lastest element in the project. Element means items, markers and regions
     -- @treturn int lastElementTimeEnd is the time in second of the end of the last element on the timeline
