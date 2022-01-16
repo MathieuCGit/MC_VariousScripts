@@ -6,19 +6,17 @@ Changelog:  Add USER OPTIONS section
 Link: Github repository https://github.com/MathieuCGit/MC_VariousScripts
 About: This script aims to rename item with folder name (if track is in folder) - track name - item position in the track
     # WARNING : it's a persistent script, continuously running in background.
-	
-    # USER OPTIONS
 
-    ## SHOW_PARENT_FOLDER
 
+    ### USER OPTIONS
+
+    **``SHOW_PARENT_FOLDER``**
     If this option is set to 1 folder name will appear in item name. 0 to not show the folder name
 
-    ## SHOW_TRACK_NAME
-
+    **``SHOW_TRACK_NAME``**
     If this option is set to 1 track name will appear in item name. 0 to not show the track name
 
-    ##SHOW_ITEM_NBR
-
+    **``SHOW_ITEM_NBR``**
     If this option is set to 1 item  number will appear in item name. 0 to not show the item number
 
 --]]
