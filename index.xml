@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="MC_VariousScripts" commit="4b798ed15dbc053f17e4b35639738d6b65dd9477">
+<index version="1" name="MC_VariousScripts" commit="907366f977b927cb8c66a8047bb52c222cf94897">
   <category name="Arrange View">
     <reapack name="MC_ALaLogic_TCP-folder-separator.lua" type="script" desc="Draw separator on folder track - aka A la Logic X">
       <metadata>
@@ -65,6 +65,13 @@
 
 {\pard \ql \f0 \sa180 \li0 \fi0 This script aims to rename item with folder name (if track is in folder) - track name - item position in the track\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 WARNING : it's a persistent script, continuously running in background.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 USER OPTIONS\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 SHOW_PARENT_FOLDER\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 If this option is set to 1 folder name will appear in item name. 0 to not show the folder name\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 SHOW_TRACK_NAME\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 If this option is set to 1 track name will appear in item name. 0 to not show the track name\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 ##SHOW_ITEM_NBR\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 If this option is set to 1 item number will appear in item name. 0 to not show the item number\par}
 }
 ]]></description>
         <link rel="website" href="https://github.com/MathieuCGit/MC_VariousScripts">Github repository</link>
