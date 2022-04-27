@@ -72,7 +72,8 @@ function Main()
 			parentTrack = reaper.GetParentTrack( track )
 			if parentTrack ~= nil then
 			--If track has a parent folder
-				_, parentFolderName = reaper.GetSetMediaTrackInfo_String(parentTrack, "P_NAME", "", false)-- get parent track name	
+				_, parentFolderName = reaper.GetSetMediaTrackInfo_String(parentTrack, "P_NAME", "", false)-- get parent track name
+				parentFolderName = parentFolderName.."_"
 			else		
 				parentFolderName=""
 			end
